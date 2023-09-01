@@ -1,12 +1,14 @@
 // while loop
 // var startingNum = 1;
 
-/* while(startingNum <= 10) {
+/* 
+while(startingNum <= 10) {
     console.log(startingNum);
     // startingNum++;
     // startingNum = startingNum+1;
     // startingNum+=1;
-} */
+} 
+*/
 
 /* var startingNum = 10;
 
@@ -90,9 +92,33 @@ var fruits = [
   console.log(fruits[i]);
 } */
 
-for (var i = 0; i < fruits.length; i++) {
+/* for (var i = 0; i < fruits.length; i++) {
     if (fruits[i] == "anaros") {
       console.log('amr favorite',fruits[i]);
       continue;
     } 
+  } */
+
+// 1. we will print an array using for/while loop
+// var students = ["Abdul Khalek", "Rafid", "Pritam", "Sharot", "Sabbir"]; // length  - 5
+// console.log(students[0])
+
+// var indexNO = 0;
+
+// while (indexNO < students.length) {
+//   console.log(students[indexNO].indexOf());
+//   indexNO++;
+// }
+
+
+
+var nums = [2, 34, 45, 65, 45, 45, 79, 97, 5, 69, 9, 3, 6, 99]; 
+
+/* for(var indexNO = 0; indexNO < nums.length; indexNO++){
+  if(nums[indexNO]==97){
+    console.log("Index of 97 =",indexNO);
+    break;
   }
+  console.log(nums[indexNO])
+} */
+
