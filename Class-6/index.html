@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class - 6</title>
+  </head>
+  <body>
+    <main id="main-container">
+      <h1>Hello DOM!</h1>
+      <h1>Welcome to my DOM!</h1>
+
+      <section>
+        <h1 id="hero">Hello Js</h1>
+        <ol>
+          <li>Rafid</li>
+          <li>Sofiq</li>
+          <li>Rony</li>
+          <li>Tokir</li>
+        </ol>
+      </section>
+
+      <section id="places-container" class="large-text">
+        <h1 id="places-title">Places I like</h1>
+        <ul id="places-list">
+          <li class="importent-places">Rangamati</li>
+          <li class="importent-places">Sundorbon</li>
+          <li class="importent-places">CoxBazar</li>
+          <li>Kaptai lake</li>
+        </ul>
+      </section>
+
+      <section class="fruits-container">
+        <h1 id="fruits-title">Fruits I like</h1>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Carrot</li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/add-dynamic.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      const h1Collection = document.getElementsByTagName("h1");
+      for (const h1 of h1Collection) {
+        // console.log(h1)
+        // console.log(h1.innerText)
+      }
+
+      const liCollection = document.getElementsByTagName("li");
+      for (const li of liCollection) {
+        // console.log(li.innerText)
+      }
+
+      const heroId = document.getElementById("hero");
+      heroId.innerText = "Hello JS DOM!";
+      // console.log(heroId.innerText)
+
+      const places = document.getElementsByClassName("importent-places");
+      for (const place of places) {
+        // console.log(place)
+        // console.log(place.innerText)
+      }
+
+      const someLi = document.querySelectorAll(".fruits-container li");
+
+      for (const li of someLi) {
+        // console.log(li.innerText)
+      }
+
+      const hero = document.querySelector("li");
+      // console.log(hero.innerText)
+    </script>
+  </body>
+</html>
